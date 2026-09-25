@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Demo/preview site: a fictional business used as a portfolio sample by
+         Artur Dymchevskyi. It is not a real company. The "noindex" directive
+         below is what keeps these pages out of search results; see robots.txt. -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
     <title>
       Maple Dental Care — Gentle, Modern Dental Care for the Whole Family |
       Toronto
@@ -20,10 +24,9 @@
       content="Family-friendly dental clinic in Toronto. Accepting new patients and most major insurance plans."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.mapledentalcare.ca/" />
     <meta
       property="og:image"
-      content="https://www.mapledentalcare.ca/PLACEHOLDER-dental-office-reception.jpg"
+      content="reception.jpg"
     />
     <meta property="og:locale" content="en_CA" />
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -78,61 +81,26 @@
         box-shadow: 0 4px 24px rgba(94, 163, 160, 0.1);
       }
     </style>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-XXXXXXXXXX");
-    </script>
-    <script type="application/ld+json">
+            <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Dentist",
+        "@type": "CreativeWork",
         "name": "Maple Dental Care",
-        "description": "Gentle, modern dental care for the whole family in Toronto.",
-        "url": "https://www.mapledentalcare.ca",
-        "telephone": "(416) 555-0188",
-        "email": "smile@mapledentalcare.ca",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "55 Eglinton Ave W",
-          "addressLocality": "Toronto",
-          "addressRegion": "ON",
-          "addressCountry": "CA"
-        },
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": "Saturday",
-            "opens": "09:00",
-            "closes": "14:00"
-          }
-        ],
-        "sameAs": ["https://www.instagram.com/mapledentalcare"],
-        "priceRange": "$$",
-        "image": "https://www.mapledentalcare.ca/PLACEHOLDER-dental-office-reception.jpg"
+        "description": "A demo dental clinic website built as a portfolio sample by Artur Dymchevskyi. The business, its address, phone number, prices, reviews and testimonials are all fictional, and this page is deliberately kept out of search results.",
+        "genre": "Website design demo",
+        "inLanguage": "en-CA",
+        "creator": {
+          "@type": "Person",
+          "name": "Artur Dymchevskyi",
+          "jobTitle": "Fullstack Developer",
+          "email": "arturdymschevskyi@gmail.com",
+          "url": "https://github.com/Artur25072001"
+        }
       }
     </script>
   </head>
   <body class="font-body text-gray-700 bg-white antialiased">
+<!-- Demo notice: this is a fictional business built as a portfolio sample. See robots.txt and the noindex meta tag in <head>. --><div role="note" style="background:#1b1b19;color:#f4efe7;font:400 0.8rem/1.55 system-ui,-apple-system,sans-serif;text-align:center;padding:0.65rem 1rem;"><strong style="font-weight:600;">Demo website.</strong> A fictional business built as a portfolio sample by Artur Dymchevskyi. The company, its team, its photos, prices, contact details, reviews and testimonials are all invented, and this page is deliberately kept out of search results. <a href="https://github.com/Artur25072001" target="_blank" rel="noopener" style="color:#f4efe7;text-decoration:underline;">See the author portfolio and code</a></div>
     <!-- ===== SHARED HEADER ===== -->
     <header
       class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100"
@@ -675,7 +643,7 @@
             <p
               class="text-mint-dark font-semibold tracking-wider uppercase text-sm mb-3"
             >
-              Patient Stories
+              Patient Stories (sample reviews)
             </p>
             <h2
               class="font-heading text-3xl sm:text-4xl font-bold text-gray-900 mb-4"
@@ -978,9 +946,9 @@
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                   <path d="M2 7l10 7 10-7" /></svg
                 ><a
-                  href="mailto:smile@mapledentalcare.ca"
+                  href="mailto:smile@example.com"
                   class="hover:text-mint transition-colors"
-                  >smile@mapledentalcare.ca</a
+                  >smile@example.com</a
                 >
               </li>
             </ul>
